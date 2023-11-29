@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark App</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- open modal -->
+    <h1 id="show-modal">Add Bookmark</h1>
+    <!-- bookmarks -->
+    <div class="container" id="bookmarks-container">
+      <!-- <div class="item">
+        <i class="fas fa-times" id="delete-bookmark" title="Delete"></i>
+        <div class="name">
+          <img
+            src="https://www.youtube.com/s/desktop/fc8159e8/img/favicon_32x32.png"
+            alt="favicon"
+          />
+          <a href="https://www.youtube.com/" target="_blank">youtube.com</a>
+        </div>
+      </div>
+      <div class="item">
+        <i class="fas fa-times" id="delete-bookmark" title="Delete"></i>
+        <div class="name">
+          <img
+            src="https://www.udemy.com/staticx/udemy/images/v8/favicon-32x32.png"
+            alt="favicon"
+          />
+          <a href="https://www.udemy.com" target="_blank">udemy.com</a>
+        </div>
+      </div>
+      <div class="item">
+        <i class="fas fa-times" id="delete-bookmark" title="Delete"></i>
+        <div class="name">
+          <img
+            src="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico"
+            alt="favicon"
+          />
+          <a href="https://codepen.io/" target="_blank">codepen.io</a>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <i class="fas fa-times close-icon" id="close-modal"></i>
+        <div class="modal-header">
+          <h3>Add Bookmark</h3>
+        </div>
+        <div class="modal-content">
+          <form id="bookmark-form">
+            <!-- website name -->
+            <div class="form-group">
+              <label for="website-name" class="form-label">"Website Name</label>
+              <input type="text" class="form-input" id="website-name" />
+            </div>
+            <!-- website URL -->
+            <div class="form-group">
+              <label for="website-url" class="form-label">"Website URL</label>
+              <input type="text" class="form-input" id="website-url" />
+            </div>
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
